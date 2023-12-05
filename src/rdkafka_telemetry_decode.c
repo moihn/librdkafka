@@ -326,7 +326,7 @@ bool unit_test_telemetry_gauge(void) {
 
 bool unit_test_telemetry_sum(void) {
         return unit_test_telemetry(
-            RD_KAFKA_TELEMETRY_METRIC_PRODUCER_CONNECTION_CREATION_TOTAL,
+            RD_KAFKA_TELEMETRY_METRIC_PRODUCER_CONNECTION_CREATION_TOTAL_CUMULATIVE,
             "org.apache.kafka.producer.connection.creation.total",
             "The total number of connections established.",
             RD_KAFKA_TELEMETRY_METRIC_TYPE_SUM);
